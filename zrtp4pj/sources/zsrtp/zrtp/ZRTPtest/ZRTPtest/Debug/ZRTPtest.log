@@ -1,0 +1,34 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of aesCFB.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\zrtp\crypto\aesCFB.cpp, ..\..\zrtp\crypto\openssl\aesCFB.cpp.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of hmac256.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\zrtp\crypto\hmac256.cpp, ..\..\zrtp\crypto\openssl\hmac256.cpp.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of hmac384.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\zrtp\crypto\hmac384.cpp, ..\..\zrtp\crypto\openssl\hmac384.cpp.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of sha256.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\zrtp\crypto\openssl\sha256.cpp, ..\..\zrtp\crypto\sha256.cpp.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of sha384.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\zrtp\crypto\openssl\sha384.cpp, ..\..\zrtp\crypto\sha384.cpp.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of zrtpDH.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\zrtp\crypto\openssl\zrtpDH.cpp, ..\..\zrtp\crypto\zrtpDH.cpp.
+  stdafx.cpp
+  zrtpCacheSqliteBackend.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\zrtp\zrtpcachesqlitebackend.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  zrtpB64Encode.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\zrtp\zrtpb64encode.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  zrtpB64Decode.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\zrtp\zrtpb64decode.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  sha2.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\zrtp\crypto\sha2.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  twofish_cfb.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\twofish_cfb.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  twofish.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\twofish.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  skein_block.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\skein_block.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  skeinApi.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\skeinapi.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  skein.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\skein.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  aes_modes.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\aes_modes.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  aestab.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\aestab.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  aeskey.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\aeskey.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  aescrypt.c
+c:\users\sherwel\desktop\csipsimple\jni\zrtp4pj\sources\zsrtp\zrtp\cryptcommon\aescrypt.c : fatal error C1853: “Debug\ZRTPtest.pch”预编译头文件来自编译器的早期版本，或者预编译头为 C++ 而在 C 中使用它(或相反)
+  正在生成代码...

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7BFBA8B6-4DB3-4139-87BE-61759CD0D3DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ZRTPtest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cryptcommon\aes.h" />
+    <ClInclude Include="..\..\cryptcommon\aescpp.h" />
+    <ClInclude Include="..\..\cryptcommon\aesopt.h" />
+    <ClInclude Include="..\..\cryptcommon\aestab.h" />
+    <ClInclude Include="..\..\cryptcommon\brg_endian.h" />
+    <ClInclude Include="..\..\cryptcommon\brg_types.h" />
+    <ClInclude Include="..\..\cryptcommon\macSkein.h" />
+    <ClInclude Include="..\..\cryptcommon\skein.h" />
+    <ClInclude Include="..\..\cryptcommon\skeinApi.h" />
+    <ClInclude Include="..\..\cryptcommon\skein_iv.h" />
+    <ClInclude Include="..\..\cryptcommon\skein_port.h" />
+    <ClInclude Include="..\..\cryptcommon\twofish.h" />
+    <ClInclude Include="..\..\cryptcommon\ZrtpRandom.h" />
+    <ClInclude Include="..\..\zrtp\crypto\aesCFB.h" />
+    <ClInclude Include="..\..\zrtp\crypto\hmac256.h" />
+    <ClInclude Include="..\..\zrtp\crypto\hmac384.h" />
+    <ClInclude Include="..\..\zrtp\crypto\sha2.h" />
+    <ClInclude Include="..\..\zrtp\crypto\sha256.h" />
+    <ClInclude Include="..\..\zrtp\crypto\sha384.h" />
+    <ClInclude Include="..\..\zrtp\crypto\twoCFB.h" />
+    <ClInclude Include="..\..\zrtp\crypto\zrtpDH.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\Base32.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZIDCache.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZIDCacheDb.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZIDCacheFile.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZIDRecord.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZIDRecordDb.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZIDRecordFile.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZRtp.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\zrtpB64Decode.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\zrtpB64Encode.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\zrtpCacheDbBackend.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpCallback.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpCallbackWrapper.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpCodes.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpConfigure.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpCrc32.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpCWrapper.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\zrtpPacket.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketBase.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketClearAck.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketCommit.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketConf2Ack.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketConfirm.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketDHPart.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketError.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketErrorAck.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketGoClear.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketHello.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketHelloAck.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketPing.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketPingAck.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketRelayAck.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpPacketSASrelay.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpSdesStream.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpStateClass.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpStates.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpTextData.h" />
+    <ClInclude Include="..\..\zrtp\libzrtpcpp\ZrtpUserCallback.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cryptcommon\aescrypt.c" />
+    <ClCompile Include="..\..\cryptcommon\aeskey.c" />
+    <ClCompile Include="..\..\cryptcommon\aestab.c" />
+    <ClCompile Include="..\..\cryptcommon\aes_modes.c" />
+    <ClCompile Include="..\..\cryptcommon\macSkein.cpp" />
+    <ClCompile Include="..\..\cryptcommon\skein.c" />
+    <ClCompile Include="..\..\cryptcommon\skeinApi.c" />
+    <ClCompile Include="..\..\cryptcommon\skein_block.c" />
+    <ClCompile Include="..\..\cryptcommon\twofish.c" />
+    <ClCompile Include="..\..\cryptcommon\twofish_cfb.c" />
+    <ClCompile Include="..\..\cryptcommon\ZrtpRandom.cpp" />
+    <ClCompile Include="..\..\zrtp\Base32.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\aesCFB.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\gcryptAesCFB.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\gcrypthmac256.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\gcrypthmac384.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\gcryptsha256.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\gcryptsha384.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\gcryptZrtpDH.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\gcrypt\InitializeGcrypt.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\hmac256.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\hmac384.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\aesCFB.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\hmac256.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\hmac384.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\InitializeOpenSSL.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\sha256.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\sha384.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\openssl\zrtpDH.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\sha2.c" />
+    <ClCompile Include="..\..\zrtp\crypto\sha256.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\sha384.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\twoCFB.cpp" />
+    <ClCompile Include="..\..\zrtp\crypto\zrtpDH.cpp" />
+    <ClCompile Include="..\..\zrtp\ZIDCacheDb.cpp" />
+    <ClCompile Include="..\..\zrtp\ZIDCacheFile.cpp" />
+    <ClCompile Include="..\..\zrtp\ZIDRecordDb.cpp" />
+    <ClCompile Include="..\..\zrtp\ZIDRecordFile.cpp" />
+    <ClCompile Include="..\..\zrtp\ZRtp.cpp" />
+    <ClCompile Include="..\..\zrtp\zrtpB64Decode.c" />
+    <ClCompile Include="..\..\zrtp\zrtpB64Encode.c" />
+    <ClCompile Include="..\..\zrtp\zrtpCacheSqliteBackend.c" />
+    <ClCompile Include="..\..\zrtp\ZrtpCallbackWrapper.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpConfigure.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpCrc32.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpCWrapper.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketClearAck.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketCommit.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketConf2Ack.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketConfirm.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketDHPart.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketError.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketErrorAck.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketGoClear.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketHello.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketHelloAck.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketPing.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketPingAck.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketRelayAck.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpPacketSASrelay.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpSdesStream.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpStateClass.cpp" />
+    <ClCompile Include="..\..\zrtp\ZrtpTextData.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ZRTPtest.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
